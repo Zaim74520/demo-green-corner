@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог — Зелёный угол</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; color: #333; background: #fff; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  header { background: #fff; padding: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .logo { font-size: 24px; font-weight: bold; color: #2E7D32; }
+  .logo span { color: #F9A825; }
+  nav a { margin-left: 20px; text-decoration: none; color: #555; font-size: 16px; }
+  nav a:hover { color: #2E7D32; }
+
+  .page-head { background: #E8F5E9; padding: 40px 0; text-align: center; }
+  .page-head h1 { color: #1B5E20; font-size: 34px; }
+  .page-head p { color: #4E7A52; margin-top: 8px; }
+
+  .section { padding: 50px 0; }
+  .section h2 { font-size: 26px; color: #1B5E20; margin-bottom: 25px; }
+
+  .cards { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .card { background: #fff; border: 1px solid #E0E0E0; border-radius: 12px; padding: 20px; width: 220px; text-align: center; }
+  .card img { width: 180px; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 10px; }
+  .card h3 { color: #2E7D32; margin-bottom: 6px; font-size: 18px; }
+  .card .price { font-size: 20px; font-weight: bold; color: #F9A825; }
+
+  footer { background: #1B5E20; color: #fff; text-align: center; padding: 25px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">Зелёный <span>угол</span></div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <h1>Каталог</h1>
+  <p>Свежие фрукты и овощи по честным ценам</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h2>Фрукты</h2>
+    <div class="cards">
+      <div class="card"><img src="https://picsum.photos/seed/apple2/180/140" alt="Яблоки"><h3>Яблоки</h3><div class="price">120 ₽ / кг</div></div>
+      <div class="card"><img src="https://picsum.photos/seed/banana2/180/140" alt="Бананы"><h3>Бананы</h3><div class="price">95 ₽ / кг</div></div>
+      <div class="card"><img src="https://picsum.photos/seed/orange2/180/140" alt="Апельсины"><h3>Апельсины</h3><div class="price">130 ₽ / кг</div></div>
+      <div class="card"><img src="https://picsum.photos/seed/grape2/180/140" alt="Виноград"><h3>Виноград</h3><div class="price">180 ₽ / кг</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Овощи</h2>
+    <div class="cards">
+      <div class="card"><img src="https://picsum.photos/seed/tomato2/180/140" alt="Помидоры"><h3>Помидоры</h3><div class="price">150 ₽ / кг</div></div>
+      <div class="card"><img src="https://picsum.photos/seed/cucumber2/180/140" alt="Огурцы"><h3>Огурцы</h3><div class="price">110 ₽ / кг</div></div>
+      <div class="card"><img src="https://picsum.photos/seed/carrot2/180/140" alt="Морковь"><h3>Морковь</h3><div class="price">45 ₽ / кг</div></div>
+      <div class="card"><img src="https://picsum.photos/seed/pepper2/180/140" alt="Перец"><h3>Перец болгарский</h3><div class="price">160 ₽ / кг</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 «Зелёный угол». Свежие фрукты и овощи с доставкой.</div>
+</footer>
+
+</body>
+</html>
