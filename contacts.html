@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — Зелёный угол</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; color: #333; background: #fff; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  header { background: #fff; padding: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .logo { font-size: 24px; font-weight: bold; color: #2E7D32; }
+  .logo span { color: #F9A825; }
+  nav a { margin-left: 20px; text-decoration: none; color: #555; font-size: 16px; }
+  nav a:hover { color: #2E7D32; }
+
+  .page-head { background: #E8F5E9; padding: 40px 0; text-align: center; }
+  .page-head h1 { color: #1B5E20; font-size: 34px; }
+
+  .section { padding: 50px 0; }
+  .contact-wrap { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; }
+  .info { max-width: 350px; line-height: 1.9; font-size: 17px; color: #444; }
+  .info div { margin-bottom: 15px; }
+
+  form { max-width: 400px; width: 100%; display: flex; flex-direction: column; gap: 12px; }
+  input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; }
+  button { background: #2E7D32; color: #fff; border: none; padding: 14px; border-radius: 30px; font-size: 16px; cursor: pointer; }
+  button:hover { background: #1B5E20; }
+
+  footer { background: #1B5E20; color: #fff; text-align: center; padding: 25px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">Зелёный <span>угол</span></div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <h1>Контакты</h1>
+</div>
+
+<section class="section">
+  <div class="container contact-wrap">
+    <div class="info">
+      <div>📍 г. Москва, ул. Зелёная, 7</div>
+      <div>📞 +7 (900) 123-45-67</div>
+      <div>🕐 Ежедневно с 8:00 до 21:00</div>
+      <div>🚚 Доставка по району — от 500 ₽, бесплатно от 1500 ₽</div>
+      <div>✉️ hello@green-corner.ru</div>
+    </div>
+    <form onsubmit="alert('Спасибо! Мы свяжемся с вами.'); return false;">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Ваш телефон" required>
+      <textarea placeholder="Что хотите заказать?"></textarea>
+      <button type="submit">Отправить заказ</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 «Зелёный угол». Свежие фрукты и овощи с доставкой.</div>
+</footer>
+
+</body>
+</html>
